@@ -1,0 +1,32 @@
+﻿<div id="mainlayout-wrapper">
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="brand" href="#">
+                    <h3>RChat</h3>
+                </a>
+                <a id="logout-button" class="btn btn-group pull-right">Logout <span id="nickname"></span></a>
+            </div>
+        </div>
+    </div>
+    <div id="content-wrapper" class="row">
+        <div class="col-md-3">
+            <div id="connected-users-container" class="well well-lg">
+                <pre id="connected-users-list" class="pre-scrollable"></pre>
+            </div>
+        </div>
+        <div id="messages-container" class="col-md-9">
+            <pre class="pre-scrollable" id="messages-feed"></pre>
+        </div>
+    </div>
+    <div id="create-message-container" class="row">
+        <input class="col-md-8 col-md-offset-3" autofocus id="message-input" type="text" placeholder="Your message" />
+        <a class="btn btn-default pull-right" id="send-message">Send</a>
+    </div>
+    <div class="row">
+        <div id="notification-feed-container" class="col-md-12">
+            <h3>Messages feed</h3>
+            <pre id="notification-feed" class="pre-scrollable"></pre>
+        </div>
+    </div>
+</div>

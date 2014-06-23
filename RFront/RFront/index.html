@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>RChat</title>
+    <link href="styles/libs/bootstrap.css" rel="stylesheet" />
+    <link href="styles/base.css" rel="stylesheet" />
+    <script src="scripts/libs/jquery-1.8.2.js"></script>
+    <script src="scripts/libs/jquery.signalR-2.1.0.js"></script>
+    <script src="scripts/libs/bootstrap.js"></script>
+    <script src="http://localhost:65075/signalr/hubs"></script>
+    <script src="scripts/utils/class-utils.js"></script>
+    <script src="scripts/controllers.js"></script>
+    <script src="scripts/chatHubHandler.js"></script>
+</head>
+<body>
+    <div id="main-wrapper" class="container container-base">
+    </div>
+    <script>
+        var mainUIController = controllers.getUIController();
+        mainUIController.loadUI('#main-wrapper');
+    </script>
+</body>
+</html>
